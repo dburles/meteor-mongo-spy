@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== 'development')
+  return;
+
 var log = function(type, collection, options) {
   console.log('mongo-spy: ' + type + ' ' + collection);
   console.log(JSON.stringify(options, true, 2));
@@ -18,7 +21,7 @@ if (! MongoSpy.options) {
 
 Meteor.startup(function() {
   console.log('mongo-spy: spying on ' + _.keys(MongoSpy.options).join(", "));
-  
+
   _.each(['update', 'upsert'], function(type) {
     if (MongoSpy.options[type]) {
       Mongo.Collection.prototype[type] = (function(proto) {

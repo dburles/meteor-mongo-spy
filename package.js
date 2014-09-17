@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Spy on your applications' Mongo queries",
-  version: "1.1.0",
+  version: "1.2.0",
   git: "https://github.com/dburles/meteor-mongo-spy.git"
 });
 
