@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Spy on your applications' Mongo queries",
-  version: "1.0.0",
+  version: "1.1.0",
   git: "https://github.com/dburles/meteor-mongo-spy.git"
 });
 
@@ -8,6 +8,7 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.1.1');
   api.use(['mongo', 'underscore'], 'server');
   api.addFiles('mongo-spy.js', 'server');
+  api.export('MongoSpy', 'server');
 });
 
 Package.onTest(function(api) {
