@@ -1,4 +1,4 @@
-meteor-mongo-spy
+Mongo Spy
 ================
 
 A simple package to spy on your applications' server side queries.
