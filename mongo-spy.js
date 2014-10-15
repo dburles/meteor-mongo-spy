@@ -1,6 +1,3 @@
-if (process.env.NODE_ENV !== 'development')
-  return;
-
 var log = function(type, collection, options) {
   console.log('mongo-spy: ' + type + ' ' + collection);
   console.log(JSON.stringify(options, true, 2));

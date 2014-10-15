@@ -1,7 +1,7 @@
 Mongo Spy
 ================
 
-A simple package to spy on your applications' server side queries.
+A simple *development only* package to spy on your applications' server side queries.
 
 
 # Installation
